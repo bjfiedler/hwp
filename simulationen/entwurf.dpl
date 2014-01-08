@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.17>
 <Properties>
-  <View=-20,-104,1291,672,1,0,16>
+  <View=-20,-50,1291,1361,1,0,790>
   <Grid=10,10,0>
   <DataSet=entwurf.dat>
   <DataDisplay=entwurf.sch>
@@ -20,7 +20,7 @@
 <Wires>
 </Wires>
 <Diagrams>
-  <Tab 40 612 315 612 3 #c0c0c0 1 00 1 171 1 1 1 0 1 1 1 0 1 201 315 0 225 "" "" "">
+  <Tab 40 612 315 612 3 #c0c0c0 1 00 1 164 1 1 1 0 1 1 1 0 1 201 315 0 225 "" "" "">
 	<"fertig.v" #0000ff 0 3 1 0 0>
   </Tab>
   <Rect 400 532 864 352 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
@@ -30,6 +30,11 @@
 	<"fertig.V" #0000ff 0 3 1 0 0>
 	<"imp.V" #0000ff 0 3 1 0 0>
   </Tab>
+  <Rect 190 1228 719 468 3 #c0c0c0 1 00 1 -6 0 0.001 0 -6 1 6 1 -1 0.2 1 315 0 225 "" "" "">
+	<"fertig.Vt" #ff0000 0 3 0 0 0>
+	<"MUX5VIN.Vt" #ff00ff 0 3 0 0 0>
+	<"MUX5VOUT.Vt" #00ff00 0 3 0 0 0>
+  </Rect>
 </Diagrams>
 <Paintings>
 </Paintings>
