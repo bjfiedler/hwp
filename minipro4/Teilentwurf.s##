@@ -2027,6 +2027,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="R20" library="03_device-library" deviceset="R-EU_" device="0207/10" value="15k"/>
 <part name="R21" library="03_device-library" deviceset="R-EU_" device="0207/10" value="10k"/>
 <part name="GND15" library="03_device-library" deviceset="GND" device=""/>
+<part name="R22" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2128,7 +2129,7 @@ DIN A4, landscape with extra doc field</description>
 <instance part="GND12" gate="1" x="-2.54" y="-20.32"/>
 <instance part="GND13" gate="1" x="78.74" y="-60.96"/>
 <instance part="IC5" gate="A" x="162.56" y="-30.48"/>
-<instance part="IC5" gate="B" x="254" y="-27.94"/>
+<instance part="IC5" gate="B" x="254" y="-27.94" rot="MR180"/>
 <instance part="IC6" gate="A" x="144.78" y="-63.5" rot="MR0"/>
 <instance part="R15" gate="G$1" x="198.12" y="-88.9" rot="R90"/>
 <instance part="R16" gate="G$1" x="198.12" y="-48.26" rot="R90"/>
@@ -2138,6 +2139,7 @@ DIN A4, landscape with extra doc field</description>
 <instance part="R20" gate="G$1" x="198.12" y="-78.74" rot="R90"/>
 <instance part="R21" gate="G$1" x="198.12" y="-99.06" rot="R90"/>
 <instance part="GND15" gate="1" x="198.12" y="-106.68"/>
+<instance part="R22" gate="G$1" x="226.06" y="-25.4" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2927,12 +2929,17 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-30.48" x2="198.12" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-30.48" x2="198.12" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-25.4" x2="205.74" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-25.4" x2="205.74" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-30.48" x2="198.12" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<wire x1="248.92" y1="-25.4" x2="205.74" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-25.4" x2="205.74" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="IC5" gate="B" pin="-IN"/>
+<wire x1="231.14" y1="-25.4" x2="246.38" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
