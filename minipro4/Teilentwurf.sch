@@ -2092,19 +2092,19 @@ DIN A4, landscape with extra doc field</description>
 <part name="GND10" library="03_device-library" deviceset="GND" device=""/>
 <part name="GND11" library="03_device-library" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device="" value="Vorgabe"/>
-<part name="R6" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R7" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R8" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R9" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R10" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R11" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R12" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R13" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
-<part name="R14" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
+<part name="R6" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
+<part name="R7" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
+<part name="R8" library="03_device-library" deviceset="R-EU_" device="0207/10" value="120k"/>
+<part name="R9" library="03_device-library" deviceset="R-EU_" device="0207/10" value="180k"/>
+<part name="R10" library="03_device-library" deviceset="R-EU_" device="0207/10" value="1M"/>
+<part name="R11" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
+<part name="R12" library="03_device-library" deviceset="R-EU_" device="0207/10" value="1M"/>
+<part name="R13" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
+<part name="R14" library="03_device-library" deviceset="R-EU_" device="0207/10" value="100k"/>
 <part name="GND9" library="03_device-library" deviceset="GND" device=""/>
 <part name="IC4" library="03_device-library" deviceset="4051" device="N"/>
 <part name="S1" library="03_device-library" deviceset="SWITCH" device=""/>
-<part name="C8" library="03_device-library" deviceset="C-EU" device="050-050X075"/>
+<part name="C8" library="03_device-library" deviceset="C-EU" device="050-050X075" value="1uF"/>
 <part name="X2" library="03_device-library" deviceset="CON_COAX" device=""/>
 <part name="GND12" library="03_device-library" deviceset="GND" device=""/>
 <part name="GND13" library="03_device-library" deviceset="GND" device=""/>
@@ -2127,7 +2127,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="P+4" library="03_device-library" deviceset="V+" device=""/>
 <part name="P-2" library="03_device-library" deviceset="V-" device=""/>
 <part name="R26" library="03_device-library" deviceset="POT" device=""/>
-<part name="R27" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
+<part name="R27" library="03_device-library" deviceset="R-EU_" device="0207/10" value="22k"/>
 <part name="R28" library="03_device-library" deviceset="R-EU_" device="0207/10" value="8k2"/>
 <part name="R32" library="03_device-library" deviceset="R-EU_" device="0207/10" value="220"/>
 <part name="C17" library="03_device-library" deviceset="C-EU" device="025-030X050"/>
@@ -2250,10 +2250,10 @@ DIN A4, landscape with extra doc field</description>
 <instance part="IC7" gate="A" x="248.92" y="-81.28" rot="R90"/>
 <instance part="IC7" gate="B" x="297.18" y="-30.48"/>
 <instance part="R25" gate="G$1" x="248.92" y="-55.88" rot="R270"/>
-<instance part="P+4" gate="1" x="223.52" y="-121.92" rot="R90"/>
-<instance part="P-2" gate="1" x="274.32" y="-124.46" rot="R90"/>
-<instance part="R26" gate="G$1" x="246.38" y="-121.92" rot="R180"/>
-<instance part="R27" gate="G$1" x="231.14" y="-121.92"/>
+<instance part="P+4" gate="1" x="320.04" y="-93.98" rot="MR90"/>
+<instance part="P-2" gate="1" x="279.4" y="-93.98" rot="MR90"/>
+<instance part="R26" gate="G$1" x="307.34" y="-93.98" rot="R180"/>
+<instance part="R27" gate="G$1" x="294.64" y="-93.98"/>
 <instance part="R28" gate="G$1" x="327.66" y="-30.48"/>
 <instance part="R32" gate="G$1" x="345.44" y="-30.48"/>
 <instance part="C17" gate="G$1" x="355.6" y="-33.02"/>
@@ -2493,8 +2493,9 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="P+10" gate="1" pin="V+"/>
 </segment>
 <segment>
+<pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="1" pin="V+"/>
-<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="317.5" y1="-93.98" x2="312.42" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -2516,10 +2517,9 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="V-" gate="G$1" pin="TP"/>
 </segment>
 <segment>
-<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="P-2" gate="1" pin="V-"/>
-<wire x1="251.46" y1="-121.92" x2="269.24" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="-121.92" x2="271.78" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-93.98" x2="289.56" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -3119,14 +3119,14 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="-121.92" x2="241.3" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="299.72" y1="-93.98" x2="302.26" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="3"/>
 <pinref part="IC7" gate="A" pin="+IN"/>
-<wire x1="246.38" y1="-116.84" x2="246.38" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-88.9" x2="246.38" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
