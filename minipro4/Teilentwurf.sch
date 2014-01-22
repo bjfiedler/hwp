@@ -2132,6 +2132,17 @@ DIN A4, landscape with extra doc field</description>
 <part name="R32" library="03_device-library" deviceset="R-EU_" device="0207/10" value="220"/>
 <part name="C17" library="03_device-library" deviceset="C-EU" device="025-030X050" value="1nF"/>
 <part name="GND17" library="03_device-library" deviceset="GND" device=""/>
+<part name="C18" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C19" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C20" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C21" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C22" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C23" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C24" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="C25" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
+<part name="GND18" library="03_device-library" deviceset="GND" device=""/>
+<part name="P+5" library="03_device-library" deviceset="V+" device=""/>
+<part name="P-3" library="03_device-library" deviceset="V-" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2258,6 +2269,21 @@ DIN A4, landscape with extra doc field</description>
 <instance part="R32" gate="G$1" x="345.44" y="-30.48"/>
 <instance part="C17" gate="G$1" x="355.6" y="-35.56"/>
 <instance part="GND17" gate="1" x="355.6" y="-48.26"/>
+<instance part="C18" gate="G$1" x="304.8" y="73.66"/>
+<instance part="C19" gate="G$1" x="304.8" y="58.42"/>
+<instance part="C20" gate="G$1" x="330.2" y="76.2"/>
+<instance part="C21" gate="G$1" x="332.74" y="60.96"/>
+<instance part="C22" gate="G$1" x="358.14" y="73.66"/>
+<instance part="C23" gate="G$1" x="355.6" y="60.96"/>
+<instance part="C24" gate="G$1" x="378.46" y="73.66"/>
+<instance part="C25" gate="G$1" x="373.38" y="58.42"/>
+<instance part="IC5" gate="P" x="294.64" y="63.5"/>
+<instance part="IC7" gate="P" x="322.58" y="66.04"/>
+<instance part="IC6" gate="P" x="347.98" y="66.04"/>
+<instance part="IC4" gate="P" x="388.62" y="66.04"/>
+<instance part="GND18" gate="1" x="309.88" y="60.96"/>
+<instance part="P+5" gate="1" x="304.8" y="83.82"/>
+<instance part="P-3" gate="1" x="304.8" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -2432,6 +2458,7 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="172.72" y1="-104.14" x2="198.12" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-109.22" x2="198.12" y2="-104.14" width="0.1524" layer="91"/>
 <junction x="198.12" y="-109.22"/>
+<label x="160.02" y="-71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R23" gate="G$1" pin="1"/>
@@ -2441,6 +2468,16 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="355.6" y1="-45.72" x2="355.6" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="68.58" x2="304.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="66.04" x2="304.8" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="66.04" x2="309.88" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="66.04" x2="309.88" y2="63.5" width="0.1524" layer="91"/>
+<junction x="304.8" y="66.04"/>
+<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -2505,6 +2542,16 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="P+4" gate="1" pin="V+"/>
 <wire x1="317.5" y1="-93.98" x2="312.42" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="76.2" x2="304.8" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="P" pin="V+"/>
+<wire x1="304.8" y1="78.74" x2="294.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="78.74" x2="294.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="78.74" x2="304.8" y2="81.28" width="0.1524" layer="91"/>
+<junction x="304.8" y="78.74"/>
+<pinref part="P+5" gate="1" pin="V+"/>
+</segment>
 </net>
 <net name="V-" class="0">
 <segment>
@@ -2528,6 +2575,16 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="P-2" gate="1" pin="V-"/>
 <wire x1="281.94" y1="-93.98" x2="289.56" y2="-93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="P" pin="V-"/>
+<wire x1="294.64" y1="55.88" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="48.26" x2="304.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="48.26" x2="304.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="48.26" x2="304.8" y2="45.72" width="0.1524" layer="91"/>
+<junction x="304.8" y="48.26"/>
+<pinref part="P-3" gate="1" pin="V-"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2592,11 +2649,13 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="134.62" y1="149.86" x2="139.7" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PC0(ADC0)"/>
 <pinref part="AD+" gate="G$1" pin="TP"/>
+<label x="134.62" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="2"/>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="355.6" y1="-33.02" x2="350.52" y2="-30.48" width="0.1524" layer="91"/>
+<label x="353.06" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MUX0" class="0">
@@ -2764,11 +2823,13 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="IC4" gate="A" pin="A"/>
 <wire x1="93.98" y1="-40.64" x2="88.9" y2="-40.64" width="0.1524" layer="91"/>
+<label x="91.44" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="A" pin="A"/>
 <wire x1="157.48" y1="-73.66" x2="170.18" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="-73.66" x2="170.18" y2="-93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2878,11 +2939,13 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="IC4" gate="A" pin="C"/>
 <wire x1="93.98" y1="-45.72" x2="88.9" y2="-45.72" width="0.1524" layer="91"/>
+<label x="88.9" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="A" pin="C"/>
 <wire x1="157.48" y1="-78.74" x2="160.02" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="-78.74" x2="160.02" y2="-93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MUX1*" class="0">
@@ -2898,11 +2961,13 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="IC4" gate="A" pin="B"/>
 <wire x1="93.98" y1="-43.18" x2="88.9" y2="-43.18" width="0.1524" layer="91"/>
+<label x="91.44" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="A" pin="B"/>
 <wire x1="157.48" y1="-76.2" x2="165.1" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-76.2" x2="165.1" y2="-93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3205,6 +3270,17 @@ DIN A4, landscape with extra doc field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,78.74,91.44,IC2,AGND,GND,,,"/>
+<approved hash="202,1,63.5,104.14,IC2,OSCI,,,,"/>
+<approved hash="104,1,63.5,124.46,IC2,VCC,VCC_USB,,,"/>
+<approved hash="104,1,63.5,127,IC2,VCCIO,VCC_USB,,,"/>
+<approved hash="202,1,104.14,119.38,IC2,_CTS,,,,"/>
+<approved hash="202,1,104.14,111.76,IC2,_DCD,,,,"/>
+<approved hash="202,1,104.14,114.3,IC2,_DSR,,,,"/>
+<approved hash="202,1,104.14,116.84,IC2,_DTR,,,,"/>
+<approved hash="202,1,104.14,109.22,IC2,_RI,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
