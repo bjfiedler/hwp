@@ -2018,6 +2018,8 @@ DIN A4, landscape with extra doc field</description>
 <part name="GND12" library="03_device-library" deviceset="GND" device=""/>
 <part name="GND13" library="03_device-library" deviceset="GND" device=""/>
 <part name="IC5" library="03_device-library" deviceset="TL082" device="P"/>
+<part name="IC6" library="03_device-library" deviceset="4051" device="N"/>
+<part name="R15" library="03_device-library" deviceset="R-EU_" device="0207/10"/>
 </parts>
 <sheets>
 <sheet>
@@ -2119,7 +2121,9 @@ DIN A4, landscape with extra doc field</description>
 <instance part="GND12" gate="1" x="-2.54" y="-20.32"/>
 <instance part="GND13" gate="1" x="78.74" y="-60.96"/>
 <instance part="IC5" gate="A" x="162.56" y="-30.48"/>
-<instance part="IC5" gate="B" x="165.1" y="-71.12"/>
+<instance part="IC5" gate="B" x="81.28" y="-96.52"/>
+<instance part="IC6" gate="A" x="154.94" y="-78.74" rot="R180"/>
+<instance part="R15" gate="G$1" x="195.58" y="-106.68" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2805,6 +2809,24 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="43.18" y1="-7.62" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="S1" gate="0" pin="P"/>
 <wire x1="93.98" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC4" gate="A" pin="X"/>
+<pinref part="IC5" gate="A" pin="+IN"/>
+<wire x1="119.38" y1="-15.24" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-15.24" x2="154.94" y2="-27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="IC6" gate="A" pin="X"/>
+<wire x1="142.24" y1="-93.98" x2="132.08" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-93.98" x2="132.08" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="IC5" gate="A" pin="-IN"/>
+<wire x1="132.08" y1="-35.56" x2="154.94" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-35.56" x2="154.94" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
