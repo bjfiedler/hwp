@@ -2250,10 +2250,10 @@ DIN A4, landscape with extra doc field</description>
 <instance part="IC7" gate="A" x="248.92" y="-81.28" rot="R90"/>
 <instance part="IC7" gate="B" x="297.18" y="-30.48"/>
 <instance part="R25" gate="G$1" x="248.92" y="-55.88" rot="R270"/>
-<instance part="P+4" gate="1" x="223.52" y="-121.92" rot="R90"/>
-<instance part="P-2" gate="1" x="274.32" y="-124.46" rot="R90"/>
-<instance part="R26" gate="G$1" x="246.38" y="-121.92" rot="R180"/>
-<instance part="R27" gate="G$1" x="231.14" y="-121.92"/>
+<instance part="P+4" gate="1" x="284.48" y="-109.22" rot="R90"/>
+<instance part="P-2" gate="1" x="335.28" y="-96.52" rot="R90"/>
+<instance part="R26" gate="G$1" x="307.34" y="-93.98" rot="R180"/>
+<instance part="R27" gate="G$1" x="292.1" y="-93.98"/>
 <instance part="R28" gate="G$1" x="327.66" y="-30.48"/>
 <instance part="R32" gate="G$1" x="345.44" y="-30.48"/>
 <instance part="C17" gate="G$1" x="355.6" y="-33.02"/>
@@ -2495,6 +2495,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="P+4" gate="1" pin="V+"/>
 <pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="-109.22" x2="287.02" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -2518,8 +2519,8 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="R26" gate="G$1" pin="1"/>
 <pinref part="P-2" gate="1" pin="V-"/>
-<wire x1="251.46" y1="-121.92" x2="269.24" y2="-121.92" width="0.1524" layer="91"/>
-<wire x1="269.24" y1="-121.92" x2="271.78" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="-93.98" x2="330.2" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="-93.98" x2="332.74" y2="-96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -3119,14 +3120,14 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="R27" gate="G$1" pin="2"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="-121.92" x2="241.3" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="-93.98" x2="302.26" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="R26" gate="G$1" pin="3"/>
 <pinref part="IC7" gate="A" pin="+IN"/>
-<wire x1="246.38" y1="-116.84" x2="246.38" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="-88.9" x2="246.38" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$40" class="0">
