@@ -2128,8 +2128,8 @@ DIN A4, landscape with extra doc field</description>
 <part name="P-2" library="03_device-library" deviceset="V-" device=""/>
 <part name="R26" library="03_device-library" deviceset="POT" device="" value="100k"/>
 <part name="R27" library="03_device-library" deviceset="R-EU_" device="0207/10" value="22k"/>
-<part name="R28" library="03_device-library" deviceset="R-EU_" device="0207/10" value="8k2"/>
-<part name="R32" library="03_device-library" deviceset="R-EU_" device="0207/10" value="220"/>
+<part name="R28" library="03_device-library" deviceset="R-EU_" device="0207/15" value="8k2"/>
+<part name="R32" library="03_device-library" deviceset="R-EU_" device="0207/15" value="220"/>
 <part name="C17" library="03_device-library" deviceset="C-EU" device="025-030X050" value="1nF"/>
 <part name="GND17" library="03_device-library" deviceset="GND" device=""/>
 <part name="C18" library="03_device-library" deviceset="C-EU" device="025-030X050" value="100nF"/>
@@ -2152,6 +2152,7 @@ DIN A4, landscape with extra doc field</description>
 <part name="GND19" library="03_device-library" deviceset="GND" device=""/>
 <part name="GND20" library="03_device-library" deviceset="GND" device=""/>
 <part name="GND21" library="03_device-library" deviceset="GND" device=""/>
+<part name="R33" library="03_device-library" deviceset="R-EU_" device="0207/10" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -2252,8 +2253,8 @@ DIN A4, landscape with extra doc field</description>
 <instance part="X2" gate="0" x="-5.08" y="-10.16"/>
 <instance part="GND12" gate="1" x="-2.54" y="-20.32"/>
 <instance part="GND13" gate="1" x="78.74" y="-60.96"/>
-<instance part="IC5" gate="A" x="162.56" y="-30.48"/>
-<instance part="IC5" gate="B" x="256.54" y="-27.94"/>
+<instance part="IC5" gate="B" x="162.56" y="-30.48"/>
+<instance part="IC5" gate="A" x="256.54" y="-27.94"/>
 <instance part="IC6" gate="A" x="144.78" y="-63.5" rot="MR0"/>
 <instance part="R15" gate="G$1" x="198.12" y="-88.9" rot="R90"/>
 <instance part="R16" gate="G$1" x="198.12" y="-48.26" rot="R90"/>
@@ -2302,6 +2303,7 @@ DIN A4, landscape with extra doc field</description>
 <instance part="GND19" gate="1" x="335.28" y="60.96"/>
 <instance part="GND20" gate="1" x="365.76" y="60.96"/>
 <instance part="GND21" gate="1" x="403.86" y="58.42"/>
+<instance part="R33" gate="G$1" x="160.02" y="-86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3049,10 +3051,9 @@ DIN A4, landscape with extra doc field</description>
 <label x="88.9" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="A" pin="C"/>
-<wire x1="157.48" y1="-78.74" x2="160.02" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-78.74" x2="160.02" y2="-93.98" width="0.1524" layer="91"/>
-<label x="160.02" y="-78.74" size="1.778" layer="95"/>
+<pinref part="R33" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="-91.44" x2="160.02" y2="-93.98" width="0.1524" layer="91"/>
+<label x="160.02" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MUX1*" class="0">
@@ -3186,7 +3187,7 @@ DIN A4, landscape with extra doc field</description>
 <net name="N$25" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="X"/>
-<pinref part="IC5" gate="A" pin="+IN"/>
+<pinref part="IC5" gate="B" pin="+IN"/>
 <wire x1="119.38" y1="-15.24" x2="154.94" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-15.24" x2="154.94" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
@@ -3195,7 +3196,7 @@ DIN A4, landscape with extra doc field</description>
 <segment>
 <pinref part="IC6" gate="A" pin="X"/>
 <wire x1="132.08" y1="-48.26" x2="132.08" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="-IN"/>
+<pinref part="IC5" gate="B" pin="-IN"/>
 <wire x1="132.08" y1="-35.56" x2="154.94" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="-35.56" x2="154.94" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
@@ -3248,7 +3249,7 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="IC5" gate="A" pin="OUT"/>
+<pinref part="IC5" gate="B" pin="OUT"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-30.48" x2="198.12" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-30.48" x2="198.12" y2="-43.18" width="0.1524" layer="91"/>
@@ -3266,12 +3267,12 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="R23" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="-25.4" x2="248.92" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="236.22" y="-25.4"/>
-<pinref part="IC5" gate="B" pin="+IN"/>
+<pinref part="IC5" gate="A" pin="+IN"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
-<pinref part="IC5" gate="B" pin="OUT"/>
+<pinref part="IC5" gate="A" pin="OUT"/>
 <wire x1="264.16" y1="-27.94" x2="276.86" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="-40.64" x2="276.86" y2="-27.94" width="0.1524" layer="91"/>
@@ -3282,7 +3283,7 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="N$36" class="0">
 <segment>
-<pinref part="IC5" gate="B" pin="-IN"/>
+<pinref part="IC5" gate="A" pin="-IN"/>
 <wire x1="248.92" y1="-30.48" x2="248.92" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="-40.64" x2="266.7" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -3372,6 +3373,14 @@ DIN A4, landscape with extra doc field</description>
 <junction x="162.56" y="-60.96"/>
 <junction x="162.56" y="-58.42"/>
 <junction x="162.56" y="-55.88"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="IC6" gate="A" pin="C"/>
+<wire x1="157.48" y1="-78.74" x2="160.02" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="-78.74" x2="160.02" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
