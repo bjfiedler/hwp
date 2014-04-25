@@ -1,0 +1,101 @@
+Partlist
+
+Exported from Teilentwurf.sch at 25.04.2014 17:44:07
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part            Value           Device          Package        Library           Sheet
+
+3PIN_POWER                      MA03-1          MA03-1         03_device-library 1
+79L08Z          79L08Z          79L08Z          TO92           03_device-library 1
+AD+             PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+C1              4,7µF           CPOL-EUE2-5     E2-5           03_device-library 1
+C2              100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C3              100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C4              100µF           CPOL-EUE2.5-7   E2,5-7         03_device-library 1
+C5              100µF           CPOL-EUE2.5-7   E2,5-7         03_device-library 1
+C6              100µF           CPOL-EUE2.5-7   E2,5-7         03_device-library 1
+C7              100µF           CPOL-EUE2.5-7   E2,5-7         03_device-library 1
+C8              1uF             C-EU050-050X075 C050-050X075   03_device-library 1
+C9              100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C10             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C11             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C12             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C13             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C14             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C15             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C16             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C17             1nF             C-EU025-030X050 C025-030X050   03_device-library 1
+C18             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C19             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C20             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C21             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C22             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C23             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C24             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+C25             100nF           C-EU025-030X050 C025-030X050   03_device-library 1
+GND             PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+IC1             MEGA8-P         MEGA8-P         DIL28-3        03_device-library 1
+IC2             FT232RL_ADAPTER FT232RL_ADAPTER DIL24-9        03_device-library 1
+IC3             78L08Z          78L08Z          TO92           03_device-library 1
+IC4             4051N           4051N           DIL16          03_device-library 1
+IC5             TL082P          TL082P          DIL08          03_device-library 1
+IC6             4051N           4051N           DIL16          03_device-library 1
+IC7             TL082P          TL082P          DIL08          03_device-library 1
+ISP                             ML6             ML6            03_device-library 1
+J1              HOHLSTECKER     HOHLSTECKER     HOHLSTECKER_25 03_device-library 1
+L1              10µH            L-EU0207/12     0207/12        03_device-library 1
+LED1                            LED3MM          LED3MM         03_device-library 1
+MUX0            PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+MUX1            PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+MUX2            PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+Q2              BS170           BS170           SOT54E         03_device-library 1
+Q3              BS170           BS170           SOT54E         03_device-library 1
+Q4              BS170           BS170           SOT54E         03_device-library 1
+Q6              IRF4905         IRF4905PBF      TO220PAD       03_device-library 1
+R1              1k              R-EU_0207/10    0207/10        03_device-library 1
+R2              4.7k            R-EU_0207/10    0207/10        03_device-library 1
+R3              150             R-EU_0207/10    0207/10        03_device-library 1
+R4              10k             R-EU_0207/12    0207/12        03_device-library 1
+R5              10k             R-EU_0207/10    0207/10        03_device-library 1
+R6              100k            R-EU_0207/10    0207/10        03_device-library 1
+R7              100k            R-EU_0207/10    0207/10        03_device-library 1
+R8              120k            R-EU_0207/10    0207/10        03_device-library 1
+R9              180k            R-EU_0207/10    0207/10        03_device-library 1
+R10             1M              R-EU_0207/10    0207/10        03_device-library 1
+R11             100k            R-EU_0207/10    0207/10        03_device-library 1
+R12             1M              R-EU_0207/10    0207/10        03_device-library 1
+R13             100k            R-EU_0207/10    0207/10        03_device-library 1
+R14             100k            R-EU_0207/10    0207/10        03_device-library 1
+R15             10k             R-EU_0207/10    0207/10        03_device-library 1
+R16             100k            R-EU_0207/10    0207/10        03_device-library 1
+R17             100k            R-EU_0207/10    0207/10        03_device-library 1
+R18             100k            R-EU_0207/10    0207/10        03_device-library 1
+R19             15k             R-EU_0207/10    0207/10        03_device-library 1
+R20             15k             R-EU_0207/10    0207/10        03_device-library 1
+R21             10k             R-EU_0207/10    0207/10        03_device-library 1
+R22             100k            R-EU_0207/10    0207/10        03_device-library 1
+R23             100k            R-EU_0207/10    0207/10        03_device-library 1
+R24             100k            R-EU_0207/10    0207/10        03_device-library 1
+R25             100k            R-EU_0207/7     0207/7         resistor          1
+R26             100k            POT             POT            03_device-library 1
+R27             22k             R-EU_0207/10    0207/10        03_device-library 1
+R28             8k2             R-EU_0207/10    0207/10        03_device-library 1
+R29             560k            R-EU_0207/10    0207/10        03_device-library 1
+R30             560k            R-EU_0207/10    0207/10        03_device-library 1
+R31             560k            R-EU_0207/10    0207/10        03_device-library 1
+R32             220             R-EU_0207/15    0207/15        03_device-library 1
+R33             0               R-EU_0207/10    0207/10        03_device-library 1
+R34             0               R-EU_0207/10    0207/10        03_device-library 1
+S1              SWITCH          SWITCH          APEM_5236      03_device-library 1
+SIM2-0512D_SIL7                 NMA             NMA            03_device-library 1
+TP6             PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+TP7             PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+V+              PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+V-              PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+VCC             PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+VCC_USB         PTR1PAD1-13Y    PTR1PAD1-13Y    P1-13Y         03_device-library 1
+X1                              USB_BUCHSE_B    USB_BUCHSE_B   03_device-library 1
+X2              CON_COAX        CON_COAX        CON_COAX       03_device-library 1
